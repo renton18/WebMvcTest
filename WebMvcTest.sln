@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMvcTest", "WebMvcTest\WebMvcTest.csproj", "{8ABD1A03-D7FB-4E4B-B859-456E85451A90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMvcTest.Tests", "WebMvcTest.Tests\WebMvcTest.Tests.csproj", "{3F2409F4-FC63-44FC-AB6C-129690B54447}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ABD1A03-D7FB-4E4B-B859-456E85451A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABD1A03-D7FB-4E4B-B859-456E85451A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABD1A03-D7FB-4E4B-B859-456E85451A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABD1A03-D7FB-4E4B-B859-456E85451A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F2409F4-FC63-44FC-AB6C-129690B54447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2409F4-FC63-44FC-AB6C-129690B54447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2409F4-FC63-44FC-AB6C-129690B54447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2409F4-FC63-44FC-AB6C-129690B54447}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D39B5314-AED8-40C4-A596-6E3A309A0DCA}
+	EndGlobalSection
+EndGlobal

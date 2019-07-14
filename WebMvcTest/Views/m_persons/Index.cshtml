@@ -1,0 +1,70 @@
+﻿@model IEnumerable<WebMvcTest.Models.m_persons>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <
+<h2>Index</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.personId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.personName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.detail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.createdDatetime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.updatedDatetime)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.personId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.personName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mailAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.detail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.createdDatetime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.updatedDatetime)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

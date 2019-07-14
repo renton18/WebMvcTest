@@ -1,0 +1,82 @@
+﻿@model WebMvcTest.Models.m_persons
+
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>m_persons</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.personId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.personId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.personName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.personName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mailAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mailAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.detail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.createdDatetime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.createdDatetime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.updatedDatetime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.updatedDatetime)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

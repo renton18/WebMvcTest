@@ -1,0 +1,74 @@
+﻿@model WebMvcTest.Models.m_persons
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>m_persons</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.personId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.personId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.personName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.personName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mailAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mailAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.detail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.detail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.createdDatetime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.createdDatetime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.updatedDatetime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.updatedDatetime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
